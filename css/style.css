@@ -1,0 +1,177 @@
+/* START GLOBAL */
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../img/backgroundImg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: center;
+  background-size: cover;
+  background-position: bottom fixed;
+}
+
+p {
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+button {
+  color: white;
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #bf0000;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #7f0019;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  padding: 3%;
+  margin: 0 10% 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* END GLOBAL */
+
+/* START HEADER */
+header .navbar {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
+header .linear-gradient {
+  top: 0;
+  background: linear-gradient(to right, red, blue);
+  height: 70px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  height: 25px;
+  margin-left: 50px;
+}
+
+header nav ul {
+  display: flex;
+  margin-right: 50px;
+}
+
+header nav ul li a {
+  padding-left: 40px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+/* END HEADER */
+
+.about {
+  margin-top: 150px;
+}
+
+
+.about .container {
+  padding: 5% 5% 8%;
+}
+
+/* START CAROUSEL */
+.carousel-wrapper {
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
+#review-text {
+  font-style: italic;
+}
+
+#review-author {
+  color: #7698f3;
+}
+
+.arrow {
+  border: solid #898989;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.reviews .container .bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.reviews .container .bullets li {
+  background-color: #b6b4b4;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.reviews .container .bullets li.active {
+  background-color: #686666;
+  border-color: red;
+}
+/* END CAROUSEL */

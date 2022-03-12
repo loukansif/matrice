@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Test Matrice Ecole</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar linear-gradient">
+        <a href="#" class="logo">
+          <img src="img/matriceLogo.png" alt="Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Accueil</a></li>
+            <li><a href="#">Zsearch</a></li>
+            <li><a href="#">Carte</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container">
+        <h2>Qui sommes-nous ?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsa
+          libero officia eius placeat, molestias quidem maxime aut voluptas
+          aperiam non dolorum impedit porro ipsum nulla! Iure vitae nulla sequi!
+          Veniam natus accusamus repellat neque magni quae nobis facere, vero
+          ipsum ratione voluptatum repudiandae cumque delectus fugiat, animi
+          iste mollitia magnam hic? Corrupti doloribus itaque excepturi dolor
+          officiis aliquam mollitia? Tempore debitis soluta repellat culpa atque
+          ut dignissimos quos iure laborum totam accusamus expedita, assumenda
+          sed molestias asperiores similique repudiandae vitae inventore natus
+          obcaecati? Dolor quod consequatur tenetur officia explicabo!
+          Architecto obcaecati consequatur eos illo sit, repudiandae
+          voluptatibus ipsam soluta, dolorum sed, possimus ipsa quia libero
+          laboriosam iusto facilis. Molestias provident aspernatur recusandae
+          dolores voluptatem dicta iusto mollitia tempora. Inventore. Laborum
+          quasi sequi a delectus incidunt? Eum quas magni pariatur non excepturi
+          dolorem error aliquam nesciunt perferendis! Fugit amet distinctio iste
+          et dicta saepe earum, assumenda atque voluptatum odio. Quasi.
+        </p>
+        <button class="buttonActiver" onClick="myAlert()">
+          Click ici pour activer l'alerte
+        </button>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2>Les avis</h2>
+        <div class="carousel-wrapper">
+          <div class="review">
+            <span id="review-text"></span>
+            <span id="review-author"></span>
+          </div>
+          <span class="arrow-prev arrow"></span>
+          <span class="arrow-next arrow"></span>
+        </div>
+        <ul class="bullets">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <section class="address">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.0138934610595!2d2.299996815673688!3d48.83887367928555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6703f1816122d%3A0xaef9a135c3d7f73a!2s15%20Sq.%20Vergennes%2C%2075015%20Paris!5e0!3m2!1sfr!2sfr!4v1646927406884!5m2!1sfr!2sfr"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <h3>15 Sq. Vergennes, 75015 Paris</h3>
+        <p>ouvert du Lundi au Samedi</p>
+        <p>9h30 - 19h</p>
+      </div>
+    </section>
+    <section class="search-z">
+      <div class="container">
+        <h3>Search_Z</h3>
+        <textarea id="z-input" placeholder="Message"></textarea>
+        <button id="z-button">lancer</button>
+        <div id="z-response"></div>
+      </div>
+    </section>
+    <section class="ip-validator">
+      <div class="container">
+        <h3>Ip_Validator</h3>
+        <textarea id="ip-input" placeholder="Message"></textarea>
+        <button id="ip-button">lancer</button>
+        <div id="ip-response"></div>
+      </div>
+    </section>
+    <section class="bigram">
+      <div class="container">
+        <h3>Bigram</h3>
+        <textarea id="big-input" placeholder="Message"></textarea>
+        <button id="big-button">lancer</button>
+        <div id="big-response"></div>
+      </div>
+    </section>
+    <script src="js/Search_Z/Search_Z.js"></script>
+    <script src="js/Ip_Validator/Ip_Validator.js"></script>
+    <script src="js/Bigram/Bigram.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
