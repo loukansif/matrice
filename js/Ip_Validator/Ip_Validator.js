@@ -12,7 +12,7 @@ function ip_validator(string) {
         return response;
     }
     for(let i = 0; i < stringArray.length; i++){
-        const item = +stringArray[i];
+        const item = stringArray[i] ? +stringArray[i] : NaN;
         if (isNaN(item) || item < 0 || item > 255) {
             return response
         } 
